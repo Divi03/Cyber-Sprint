@@ -1,0 +1,39 @@
+.home-container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-content{
+    margin-top:10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.image-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.top-content span{
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    font-weight: 900;
+    color: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
+}
+.wallet-list{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.wallet-list span{
+    padding: 0.2rem;
+    margin:1rem;
+    border: 1px black solid;
+    border-radius: 0.2rem;
+    font-weight: 700;
+}
