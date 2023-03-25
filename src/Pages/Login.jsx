@@ -1,34 +1,5 @@
-// import React from 'react';
-import Navbar from '../components/Navbar';
-// import './login.css';
-
-// export default function Login() {
-//   return (
-//     <div className='main-container'>
-//     <Navbar/>
-
-//     <div className='form-container'>
-//       <form action="" className='form'>
-//         <div>
-//         <label htmlFor="email_input">Email</label>
-//         <input type="email" id='email_imput'/>
-//         </div>
-
-//         <div>
-
-//         <label htmlFor="password_input">Password</label>
-//         <input type="password" id='password_input' />
-
-//         </div>
-//       </form>
-//     </div>
-
-//     </div>
-//   )
-// }
-
-
 import React from "react"
+import Navbar from '../components/Navbar'
 import './login.css'
 
 export default function (props) {
@@ -56,12 +27,15 @@ export default function (props) {
               />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <button type="submit" className="btn btn-primary">
-              Submit
+            <button type="submit" className="btn btn-dark">
+              Log In
             </button>
+
+            <a href="./signup" className="btn btn-dark">Sign Up</a>
+
           </div>
           <p className="forgot-password text-right mt-2">
-            {/* Forgot <a href="#">password?</a> */}
+            Forgot <a href="#">password?</a>
           </p>
         </div>
       </form>

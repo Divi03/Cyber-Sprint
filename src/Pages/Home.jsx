@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
-import { FaUserCircle } from 'react-icons/fa'
+import Chart from '../components/chart';
+import { BiUser } from 'react-icons/bi'
 import './home.css';
 
 export default function home() {
@@ -12,7 +13,7 @@ export default function home() {
         <div className='image-title'>
           {/* Avatar */}
           <img src="" alt="" srcset="" />
-          <FaUserCircle size={150} color='grey' fontSize='small'/>
+          <BiUser size={150} color='black'/>
 
           {/* Title */}
           <span>Business Man</span>
@@ -27,12 +28,19 @@ export default function home() {
       {/* wallet tabs */}
 
       <div className='wallet-list'>
-        <span>wallet1</span>
-        <span>wallet2</span>
-        <span>wallet3</span>
-        <span>wallet4</span>
+        <div>
+          <button onClick="" className='btn btn-dark'>wallet1</button>
+          <button onClick="" className='btn btn-dark'>wallet1</button>
+          <button onClick='' className='btn btn-dark'>wallet1</button>
+          <button onClick='' className='btn btn-dark'>wallet1</button>
+        </div>
       </div>
 
+
+      {/* change accorging to click (Manas) */}
+      <div className='visuals'>
+        <Chart/> 
+      </div>
 
     </div>
   )

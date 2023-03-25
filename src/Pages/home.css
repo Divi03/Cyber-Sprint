@@ -5,7 +5,7 @@
 }
 
 .top-content{
-    margin-top:10rem;
+    margin-top:8rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,17 +23,27 @@
     border: 1px solid black;
     border-radius: 0.2rem;
     font-weight: 900;
-    color: linear-gradient(178.6deg, rgb(20, 36, 50) 11.8%, rgb(124, 143, 161) 83.8%);
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .wallet-list{
-    margin-top: 1rem;
     display: flex;
+    margin-top: 1rem;
     justify-content: center;
 }
-.wallet-list span{
-    padding: 0.2rem;
-    margin:1rem;
-    border: 1px black solid;
-    border-radius: 0.2rem;
-    font-weight: 700;
+
+.wallet-list div{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content:space-evenly;
+    min-width: 50vw;
+}
+
+.visuals{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }

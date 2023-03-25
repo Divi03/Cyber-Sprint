@@ -1,0 +1,54 @@
+.budget-header{
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6rem;
+    border-radius: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.button:active{
+    border: none;
+    animation: zoom-in-zoom-out 1s ease 1;
+}
+
+@keyframes zoom-in-zoom-out{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform:scale(1.5, 1.5);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
+.budget-list hr{
+    width: 80vw;
+}
+
+.budget-heading{
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.budget-item{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budget-item span{
+    max-width: 1rem;
+}
+
+.no-budget{
+    display: flex;
+}

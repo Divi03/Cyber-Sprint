@@ -8,6 +8,7 @@ import home from '../Pages/Home';
 import './navbar.css'
 
 function head() {
+  
   return (
     <>  
     <Navbar fixed='top' bg="light" expand="lg">  
@@ -17,15 +18,16 @@ function head() {
         <SiFampay size={50}/>
       </Navbar.Brand>  
       <Navbar.Toggle aria-controls="basic-navbar-nav" />  
-      <Navbar.Collapse id="basic-navbar-nav">  
+      <Navbar.Collapse id="basic-navbar-nav"> 
         <Nav className="me-auto">  
-          <Nav.Link href="#home">Home</Nav.Link>  
-          <Nav.Link href="#link" id='Nav-link'>
+          <Nav.Link href="./">Home</Nav.Link>
+          <Nav.Link href="./budget">Budget</Nav.Link>  
+          {/* <Nav.Link href="./Account" id='Nav-link'>
             <div className='avatar'>
-                {/* <RxAvatar size={50}/> */}
                 <span>Setting</span>
             </div>
-            </Nav.Link>  
+          </Nav.Link> */}
+          <Nav.Link href='./login'>Login</Nav.Link>  
         </Nav> 
         </Navbar.Collapse>  
 
